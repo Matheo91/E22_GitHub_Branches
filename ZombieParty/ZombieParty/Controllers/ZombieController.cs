@@ -31,7 +31,7 @@ namespace ZombieParty.Controllers
       {
         
         Zombies = await _db.Zombie.Include(z => z.ZombieType).ToListAsync(),
-        ZombieTypes = await _db.ZombieType.ToListAsync()
+        //ZombieTypes = await _db.ZombieType.ToListAsync()
       };
       return View(zombieCardVM);
 
